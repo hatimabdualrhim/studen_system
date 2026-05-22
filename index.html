@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نموذج تسجيل الطلاب</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2> مشرع تسجيل الطلاب تحت اشراف :د.مرتضى محمد</h2>
+        <h2> <center>    اعداد الطالب حاتم عبدالرحيم ادم على  </center>   </h2>
+        <h2> <center>      نموذج تسجيل الطلاب     <center> </h2>
+        <p class="subtitle"> <h2><center>بيانات تسجيل الطالب</center> </h2></p>
+
+        <form action="process.php" method="POST" class="form-box">
+            
+            <div class="form-group">
+                <label for="name">اسم الطالب</label>
+                <caption></caption>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">البريد الإلكتروني</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="id">رقم الطالب</label>
+                <input type="text" id="id" name="id" required>
+            </div>
+
+            <div class="form-group">
+                <label for="academicyear"> السنة الدراسي</label>
+                <input type="text" id="academicyear" name="academicyear" required>
+            </div>
+
+            <div class="form-group">
+                <label for="batch">اسم الدفعة</label>
+                <input type="text" id="batch" name="batch" required>
+            </div>
+
+            <button type="submit" class="btn">تسجيل الطالب</button>
+        </form>
+
+        <div class="links">
+            <a href="students.php">عرض الطلاب المسجلين</a>
+        </div>
+    </div>
+
+</body>
+</html>
